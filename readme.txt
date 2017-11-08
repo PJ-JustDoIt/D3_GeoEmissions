@@ -1,6 +1,6 @@
 
 
-App visualizes greemhouse gas emissions across the world . 
+App visualizes greenhouse gas emissions across the world . 
 
 App uses  :
 
