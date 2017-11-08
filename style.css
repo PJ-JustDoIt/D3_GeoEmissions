@@ -1,0 +1,101 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body {
+  margin: 0;
+  background: #cfd0d3;
+
+}
+
+#title{
+  color: gray;
+  padding: 15px;
+  text-align: center;  
+}
+
+#nav {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(100,100,100, 0.75), rgba(255, 255, 255, 0));
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+
+#nav p {
+  margin: 4px;
+}
+
+
+#nav h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#nav input {
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+.chart-container {
+  width: 100%;
+  margin: 3% 0%;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  border: none;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tooltip p {
+  margin: 2px;
+}
+
+.tooltip:after {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  border: 8px solid transparent;
+  border-top-color: #2d3f51;
+  bottom: -20px;
+  margin-left: -4px;
+}
+
+.country {
+  stroke: #A9A9AA;
+  stroke-width:1px;
+}
+
+.country:hover {
+  cursor: pointer;
+}
+
+.country.active {
+  stroke: #2d3f51;
+  stroke-width: 2px;
+}
+
+.y-axis-label {
+  font-size: 0.8em;
+}
+
+.tick text {
+  font-size: 1.5em;
+}
